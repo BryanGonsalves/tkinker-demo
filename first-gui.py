@@ -1,26 +1,22 @@
 import tkinter as tk
 
+window=tk.Tk()
+window.title(" My Window ")
+window.geometry("600x400")
 
-def hello(event):
-    display = tk.Label(text ="Hello User!")
-    display.grid(column=0,row=3)
-def bye(event):
-    display2 = tk.Label(text="Bye User!")
-    display2.grid(column=0,row=3)
-    
+opLabel = tk.Label(text = "Select the Option: ")
+opLabel.grid(column=0,row=0)
 
-window = tk.Tk()
-window.title("My First Tkinker GUI")
-label_name = tk.Label(text = "Hello, this is my first Tkinter App!")
-button_name = tk.Button(window,text="Click Me!")
-first_entry = tk.Entry(window)
+myVar  = tk.StringVar(window)
+myVar.set("Select")
+opMenu = tk.OptionMenu(window, myVar, "Option1","Option2", "Option3")
+opMenu.grid(column=1,row=0)
 
-label_name.grid(column=0,row=1)
-button_name.grid(column=1,row=1)
-first_entry.grid(column=0,row=0)
-button_name.bind("<Button-1>",hello)
-button_name.bind("<Button-2>",bye)
+def printOption():
+    value = myVar.get()
+    print(value)
 
+button=tk.Button(window,text="Click Here",command=printOption)
+button.grid(column=0,row=1)
 
-window.geometry('1000x600')
 window.mainloop()

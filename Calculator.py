@@ -24,6 +24,13 @@ myOption.set("Select")
 opMenu = tk.OptionMenu(window, myOption, "Add","Subtract", "Multiply", "Divide")
 opMenu.grid(column=1,row=2)
 
+var = tk.IntVar()
+r1 = tk.Radiobutton(window,text="Correct",variable=var,value=1)
+r2 = tk.Radiobutton(window,text="Wrong",variable=var,value=2)
+r1.grid(column=0,row=7)
+r2.grid(column=1,row=7)
+
+
 # button event method
 
 def mathOperations():
@@ -50,5 +57,7 @@ def mathOperations():
 
 button=tk.Button(window,text="Calculate",command=mathOperations,bg="lightgreen")
 button.grid(column=0,row=3)
+button=tk.Button(window,text="Submit",bg="green")
+button.grid(column=0,row=8)
 
 window.mainloop()

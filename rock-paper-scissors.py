@@ -4,6 +4,38 @@ window = tk.Tk()
 window.geometry("400x300")
 window.title("Rock Paper Scissors Game")
 
+
+USER_SCORE = 0
+COMP_SCORE = 0
+USER_CHOICE = ""
+COMP_CHOICE = ""
+
+def random_computer_choice():
+    return random.choice(['rock','paper','scissors'])
+
+def result(x,y):
+    print("We will define it soon...")
+
+def rock():
+    global USER_CHOICE
+    global COMP_CHOICE
+    USER_CHOICE='rock'
+    COMP_CHOICE=random_computer_choice()
+    result(USER_CHOICE,COMP_CHOICE)
+def paper():
+    global USER_CHOICE
+    global COMP_CHOICE
+    USER_CHOICE='paper'
+    COMP_CHOICE=random_computer_choice()
+    result(USER_CHOICE,COMP_CHOICE)
+def scissors():
+    global USER_CHOICE
+    global COMP_CHOICE
+    USER_CHOICE='scissors'
+    COMP_CHOICE=random_computer_choice()
+    result(USER_CHOICE,COMP_CHOICE)
+
+
 frame1 = tk.Frame(window, padx=5, pady=5)
 frame1.grid(column=0,row=0)
 

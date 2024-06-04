@@ -4,6 +4,19 @@ window = tk.Tk()
 window.title("Registration Form")
 window.geometry("600x400")
 
+def printData():
+    print(fNameEntry.get())
+    print(lNameEntry.get())
+    print(addressText.get("1.0","end"))
+    print(nationVar.get())
+    print(genderVar.get())
+    print(termsVar.get())
+
+button=tk.Button(window,text="Submit",command=printData)
+button.grid(column=0,row=6)
+
+
+
 fNameLabel = tk.Label(text="First Name: ")
 fNameLabel.grid(column=0,row=0)
 fNameEntry = tk.Entry(window)

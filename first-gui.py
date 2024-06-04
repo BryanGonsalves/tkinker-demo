@@ -28,4 +28,7 @@ def printCheck():
 button=tk.Button(window,text="Submit",command=printCheck)
 button.grid(column=0,row=3)
 
+myText = tk.Text(window,height=10,width=20)
+myText.grid(column=3,row=3)
+
 window.mainloop()

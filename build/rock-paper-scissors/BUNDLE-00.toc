@@ -1,0 +1,4 @@
+([('rock-paper-scissors',
+   '/Users/bryangonsalves/Desktop/Educative/Courses/Flask/tkinker '
+   'demo/dist/rock-paper-scissors',
+   'EXECUTABLE')],)

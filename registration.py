@@ -13,5 +13,11 @@ lNameLabel.grid(column=0,row=1)
 lNameEntry = tk.Entry(window)
 lNameEntry.grid(column=1,row=1)
 
+addressLabel = tk.Label(text="Address: ")
+addressLabel.grid(column=0,row=2)
+addressText = tk.Text(window,height=4,width=15)
+addressText.grid(column=1,row=2)
+
+
 
 window.mainloop()

@@ -5,7 +5,7 @@ window.title("My Window")
 window.geometry("300x300")
 
 frame1 = tk.Frame(window)
-frame1.grid(column=0,row=0,padx=20)
+frame1.grid(column=0,row=0,padx=20,pady=20)
 
 frame2 = tk.Frame(window)
 frame2.grid(column=1,row=0)

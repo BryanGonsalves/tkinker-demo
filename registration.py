@@ -32,5 +32,10 @@ R1 = tk.Radiobutton(window,text="Male",variable=genderVar, value='Male')
 R1.grid(column=1,row=4)
 R2 = tk.Radiobutton(window, text="Female", variable=genderVar, value='Female')
 R2.grid(column=2,row=4)
+termsVar = tk.IntVar()
+C1 = tk.Checkbutton(window, text = "I agree to T & C", variable = termsVar, \
+                 onvalue = 1, offvalue = 0, height=2, \
+                 width = 17)
+C1.grid(column=1,row=5)
 
 window.mainloop()

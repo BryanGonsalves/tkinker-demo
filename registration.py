@@ -18,6 +18,11 @@ addressLabel.grid(column=0,row=2)
 addressText = tk.Text(window,height=4,width=15)
 addressText.grid(column=1,row=2)
 
-
+nationLabel = tk.Label(text="Nationality: ")
+nationLabel.grid(column=0,row=3)
+nationVar = tk.StringVar(window)
+nationVar.set("Select")
+opMenu = tk.OptionMenu(window, nationVar, "US","UK", "India")
+opMenu.grid(column=1,row=3)
 
 window.mainloop()
